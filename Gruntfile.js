@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             },
             uglify: {
                 tasks: 'uglify',
-                files: ['dest/concat/hogehoge.js']
+                files: ['dest/concat/main.js']
             },
         },
 
@@ -36,15 +36,15 @@ module.exports = function(grunt) {
                 // 元ファイルの指定。
                 src: 'dest/js/**/*.js',
                 // 出力ファイルの名前・パス指定
-                dest: 'dest/concat/hogehoge.js'
+                dest: 'dest/concat/main.js'
             }
         },
 
         // 圧縮
         uglify: {
             dist: {
-                src: "dest/concat/hogehoge.js",
-                dest: "dest/concat/hogehoge-min.js"
+                src: "dest/concat/main.js",
+                dest: "main-min.js"
             },
         },
 

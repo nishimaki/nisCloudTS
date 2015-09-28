@@ -1,0 +1,1 @@
+var http=require("http"),path=require("path"),express=require("express"),Main=function(){function a(){var a=express(),b=http.createServer(a);a.use(express["static"](path.resolve(__dirname,"client"))),b.listen(process.env.PORT||3e3)}return a}(),main=new Main;
